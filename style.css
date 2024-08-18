@@ -1,0 +1,150 @@
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #b28764;
+    display: flex; /* Enable flexbox layout */
+    min-height: 100vh; /* Ensure the body takes full height */
+}
+
+/* Navigation styles */
+#navbar {
+    background: #444;
+    color: #fff;
+    width: 200px; /* Fixed width for the sidebar */
+    padding: 1rem;
+    position: fixed; /* Fix the position to the left */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Add scroll if 
+    the content overflows */
+    text-align: center;
+    cursor: pointer;
+    
+    
+}
+
+#navbar header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+#navbar ul li:hover {
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #EBA487;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    
+
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    
+    
+}
+
+/* Main content styles */
+.main-doc {
+    margin-left: 220px; /* Space for the sidebar */
+    padding: 2rem 1rem;
+    width: calc(100% - 220px); /* Adjust width to account for the sidebar */
+    
+}
+
+.main-section {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-section header {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #EBA487;
+    background:#444;
+    color: white;
+}
+
+p {
+    margin: 0 0 1rem;
+    border-bottom: 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Article styles inside sections */
+article {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Code block styles */
+code {
+    background: #f4f4f4;
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 1rem 0;
+    white-space: pre-wrap;
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+    text-align: spread-evenly;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #navbar ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .main-doc {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+}
