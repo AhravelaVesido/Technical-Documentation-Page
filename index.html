@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=width-device , initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>All About CCTV</title>
+  </head>
+    <body>
+      <nav id="navbar">
+        <header><strong>All About CCTV</strong></header>
+          <article>
+          <ul>
+            <li><a class="nav-link" href="#What_is_a_CCTV">What is a CCTV</a></li>
+            <li><a class="nav-link" href="#How_does_it_Work">How does it Work</a></li>
+            <li><a class="nav-link" href="#Types_of_CCTV">Types of CCTV</a></li>
+            <li><a class="nav-link" href="#Uses_of_it">Uses of it</a></li>
+            <li><a class="nav-link" href="#Advantages_and_Disadvantages">Advantages and Disadvantages</a></li>
+          
+          <li><a class="nav-link" href="#Configuration_of_CCTV">Configuration of CCTV</a></li>
+          </ul>
+      </nav>
+      </article>
+    
+
+      <main class="main-doc" id="main-doc"> 
+
+          <section class="main-section" id="What_is_a_CCTV"> 
+            <header><strong>What is a CCTV</strong></header>
+            <article>
+              <p>CCTV stands for Closed Circuit Television, but you may have heard people refer to it as surveillance cameras, too.</p>
+              <p>Most CCTV systems consist of one or more strategically placed cameras that transmit live footage to one or more monitors. The footage is also recorded and stored, either locally or on the cloud, for playback.</p>
+            </article>
+          </section>
+
+          <section class="main-section" id="How_does_it_Work">
+            <header><strong>How does it Work</strong></header>
+            <article>
+              <p> A CCTV system can be as simple as a wire-free camera connected to your smartphone, or it can be as complex as many cameras, connected to various monitors across several buildings. Regardless of the size or type of CCTV, they all work in a similar way.</p>
+              <p>Cameras, which are strategically placed, capture live footage of a particular area. The footage is then transmitted to a recording device (DVR or NVR), and a monitor, smartphone, or computer. While the footage is shown in real time on the monitor, the recording device stores the video for later reference. Some modern CCTV systems may not have a local recording device—instead, the footage may be stored in the cloud.</p>
+            </article>
+          </section>
+
+          <section class="main-section" id="Types_of_CCTV">
+            <header><strong>Types of CCTV</strong></header>
+            <article>
+              <p>There are various types of CCTV cameras tailored for different environments and uses. </p>
+              <p>Outdoor cameras are designed with weatherproof materials to endure harsh conditions like rain and heat, often equipped with motion sensors and lighting adjustments. Indoor cameras, found in places like offices and malls, are smaller, lighter, and typically less expensive. Bullet cameras, commonly used outdoors, are large and ideal for long-distance and nighttime surveillance. Dome cameras, often used in banks and hotels, feature protective dome casings to prevent vandalism and damage. Pan-tilt-zoom (PTZ) cameras offer remote control for adjusting angles and zooming in on details. Turret cameras, similar to dome cameras but without the glass casing, provide clearer images by avoiding glare and dirt that can obscure footage.</p>
+         </article>
+          </section>
+
+          <section class="main-section" id="Uses_of_it">
+            <header><strong>Uses of it</strong></header>
+            <article>
+              <p>CCTV cameras are widely used for various purposes, including traffic monitoring, public transport, airports, businesses, and home security. In traffic monitoring, CCTV cameras are strategically placed on highways and intersections to help law enforcement monitor traffic and detect dangerous driving behaviors. Public transport systems, such as bus and subway stations, use CCTV to track suspicious behavior and aid emergency workers in assessing situations remotely. Airports also rely heavily on CCTV to monitor every entry and exit, ensuring the safety of travelers by identifying confrontations and suspicious activities.</p>
+              <p>Businesses such as banks, museums, hotels, and stores use CCTV to deter crime and monitor both visitors and employees. CCTV footage in these establishments can provide valuable evidence during investigations. In home security, CCTV has become more accessible and affordable, allowing homeowners to set up cameras to monitor their properties remotely. This gives homeowners peace of mind and can help identify criminals if needed, making CCTV a popular option for enhancing home safety.</p>
+              </article>
+          </section>
+
+          <section class="main-section" id="Advantages_and_Disadvantages">
+            <header><strong>Advantages and Disadvantages</strong></header>
+            <article>
+              <p>
+CCTV cameras offer several advantages, including ease of setup and affordability, making them accessible to most individuals and businesses. Modern systems with motion sensors can alert users to unexpected visitors, providing real-time footage that ensures peace of mind. CCTV cameras act as a deterrent to criminals and, if a crime does occur, they can provide valuable evidence for investigations.</p>
+              <p>However, there are some disadvantages to consider. CCTV cameras can raise concerns about privacy, as people may feel uncomfortable being filmed constantly. This discomfort extends to employees, who may feel mistrusted or undervalued under constant surveillance. Additionally, while CCTV can deter crime, it doesn't prevent it entirely, and seasoned criminals may be able to damage cameras to obscure evidence.</p>
+              </article>
+          </section>
+
+          <section class="main-section" id="Configuration_of_CCTV">
+            <header><strong>Configuration of CCTV</strong></header>
+            <article>
+              <p>To configure a CCTV system using basic coding, start by setting up the camera using protocols like ONVIF. For IP cameras, you can use a script in Python with the ONVIF library to connect to the camera, retrieve its information, and adjust settings such as resolution. This involves establishing a connection with the camera's IP address, port, and authentication credentials, and then sending configuration commands to the camera.</p>
+              <p>For integrating CCTV into a web application, you can use HTML to embed the camera's video stream using RTSP (Real-Time Streaming Protocol). A simple HTML5 &lt;video&gt; tag can display the live feed from the camera by providing the RTSP URL. Additionally, a server-side script in PHP or Node.js can handle configuration settings submitted through web forms, which can then be used to interact with the camera’s API to apply changes.</p>
+
+              
+                <ul>
+               <p><strong>Basic RTSP Stream Code (HTML)</strong></p>
+                  <li>
+                  <code>
+                  &lt;video&gt; width="600" controls autoplay>
+    <source src="rtsp://username:password@camera-ip-address:554/stream" type="application/x-rtsp">
+    Your browser does not support video playback.
+&lt;video&gt;
+                  </code> 
+                  </li>
+              <p><strong>ONVIF Camera Configuration (Python)</strong></p>
+                 <li>
+                 <code>from onvif import ONVIFCamera
+
+# Connect to camera
+camera = ONVIFCamera('192.168.1.100', 80, 'admin', 'password')
+
+# Get basic information
+device = camera.create_devicemgmt_service()
+info = device.GetDeviceInformation()
+
+print(f"Manufacturer: {info.Manufacturer}")
+print(f"Model: {info.Model}")
+                 </code>
+                 </li>
+
+             <p><strong>Basic WebSocket for Streaming (Node.js)</strong></p>
+                 <li>
+                 <code>const WebSocket = require('ws');
+const server = new WebSocket.Server({ port: 8080 });
+
+server.on('connection', ws => {
+    ws.on('message', message => {
+        console.log(`Received message: ${message}`);
+    });
+
+    // Send the RTSP stream link to the client
+    ws.send('rtsp://username:password@camera-ip-address:554/stream');
+});
+</code>
+</li>
+
+         
+             <p><strong>Simple HTML Form to Configure Camera Settings</strong></p>
+
+             <li>
+                 <code>&lt;form&gt;
+    <!-- IP Address -->
+    &lt;label for="ip_address"&gt;IP Address:&lt;/label&gt;
+    &lt;input type="text" id="ip_address" name="ip_address"&gt;&lt;br&gt;
+
+    <!-- Port -->
+    &lt;label for="port"&gt;Port:&lt;/label&gt;
+    &lt;input type="number" id="port" name="port"&gt;&lt;br&gt;
+
+    <!-- Username -->
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;
+
+    <!-- Password -->
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;
+
+    <!-- Submit Button -->
+    &lt;input type="submit" value="Configure Camera"&gt;
+&lt;/form&gt;
+</code>
+</li>
+
+             <p><strong>Simple PHP Code to Handle Configuration</strong></p>
+
+             <li>
+                 <code><?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $ip = $_POST['ip_address'];
+    $port = $_POST['port'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Example: Print received values
+    echo "IP Address: $ip <br>";
+    echo "Port: $port <br>";
+    echo "Username: $username <br>";
+    
+    // Add code here to configure camera using these values
+    // For example, sending a POST request to the camera's API
+}
+?>
+</code>
+</li>
+    </ul>
+              
+              </article>
+
+          </section>
+
+      </main>
+
+    </body>
+
+</html>
