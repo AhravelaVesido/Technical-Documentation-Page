@@ -134,6 +134,9 @@ ul li {
         width: 100%;
         height: auto;
         position: fixed;
+        display: flex;
+        flex-direction: column;
+        justfiy-content: flex-start;
     }
 
     #navbar ul li {
