@@ -133,12 +133,10 @@ ul li {
     #navbar {
         width: 100%;
         height: auto;
-        margin: 0;
-        padding: 0;
         position: fixed;
         display: flex;
         flex-direction: column;
-        justfiy-content: flex-start;
+        
         
     }
 
