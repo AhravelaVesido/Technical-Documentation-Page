@@ -150,7 +150,9 @@ ul li {
 
     .main-doc {
         margin-left: 0;
-        width: 100%;
+        width: 70%;
+        z-index: -1;
+        
         
     }
 
