@@ -133,7 +133,7 @@ ul li {
     #navbar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: fixed;
     }
 
     #navbar ul li {
@@ -145,6 +145,4 @@ ul li {
         margin-left: 0;
         width: 100%;
     }
-
-
 }
