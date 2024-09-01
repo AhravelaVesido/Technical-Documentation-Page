@@ -140,7 +140,7 @@ ul li {
         height: auto;
         position: fixed;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         left: 0;
@@ -154,7 +154,7 @@ ul li {
 
     .main-doc {
         margin-left: 0;
-        width: 70%;
+        width: 80%;
         margin: auto;
         
         
