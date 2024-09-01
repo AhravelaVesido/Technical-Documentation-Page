@@ -1,4 +1,6 @@
-;body {
+/* General styles for body and overall layout */
+
+body {
     font-family: Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -131,26 +133,20 @@ ul li {
 
 @media (max-width: 768px) {
     #navbar {
-        width: 30%;
-        height: 100%;
+        width: 100%;
+        height: auto;
         position: relative;
-        left: 0;
-        
-        
-        
     }
 
     #navbar ul li {
         display: block;
         margin: 0.5rem 0;
-        font-size: 1.0rem;
-        
     }
 
     .main-doc {
         margin-left: 0;
         width: 100%;
-       
-        
     }
+
+
 }
