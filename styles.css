@@ -144,11 +144,11 @@ ul li {
     #navbar ul li {
         display: block;
         margin: 0.5rem 0;
-        font-size: 1.5rem;
+        
     }
 
     .main-doc {
         margin-left: 0;
-        width: 70%;
+        width: 100%;
     }
 }
