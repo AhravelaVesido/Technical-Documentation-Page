@@ -140,7 +140,9 @@ ul li {
         height: auto;
         position: fixed;
         display: flex;
-        align-items: flex-start;
+        flex-direction: column
+        justify-content: center;
+        align-items: center;
         left: 0;
         
     }
