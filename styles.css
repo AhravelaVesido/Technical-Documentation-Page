@@ -137,14 +137,14 @@ ul li {
     }
     #navbar {
         width: 30%;
-        height: auto;
+        height: 100vh;
         position: fixed;
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* Stack items vertically */
         justify-content: center;
         align-items: center;
-        
-        
+        left: 0;
+        top: 0; 
     }
 
     #navbar ul li {
