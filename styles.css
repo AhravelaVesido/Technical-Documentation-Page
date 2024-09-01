@@ -132,10 +132,14 @@ ul li {
 
 
 @media (max-width: 768px) {
-    #navbar {
+    html{
         width: 100%;
+    }
+    #navbar {
+        width: 30%;
         height: auto;
-        position: relative;
+        position: fixed;
+        left: 0;
     }
 
     #navbar ul li {
@@ -146,6 +150,8 @@ ul li {
     .main-doc {
         margin-left: 0;
         width: 100%;
+        position: absolute;
+        right: 0;
     }
 
 
