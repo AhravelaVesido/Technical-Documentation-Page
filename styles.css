@@ -131,10 +131,12 @@ ul li {
 
 @media (max-width: 768px) {
     #navbar {
-        width: 60%;
-        height: auto;
+        width: 30%;
+        height: 100%;
         position: fixed;
-        z-index: 2;
+        display: block;
+        margin: 0;
+        padding: auto;
         
         
     }
@@ -142,10 +144,11 @@ ul li {
     #navbar ul li {
         display: block;
         margin: 0.5rem 0;
+        font-size: 1.5rem;
     }
 
     .main-doc {
         margin-left: 0;
-        width: 100%;
+        width: 70%;
     }
 }
