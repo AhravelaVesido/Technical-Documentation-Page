@@ -133,7 +133,7 @@ ul li {
     #navbar {
         width: 30%;
         height: 100%;
-        position: absolute;
+        position: relative;
         left: 0;
         
         
