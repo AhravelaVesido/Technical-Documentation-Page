@@ -145,11 +145,14 @@ ul li {
     #navbar ul li {
         display: block;
         margin: 0.5rem 0;
+        font-size: 1.0rem;
         
     }
 
     .main-doc {
         margin-left: 0;
         width: 100%;
+        padding: 0;
+        font-size: 1.0rem;
     }
 }
